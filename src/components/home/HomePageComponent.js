@@ -9,7 +9,7 @@ class HomePageComponent extends React.Component {
     render() {
         return (
             <Container className={"w-100 h-100"}>
-                 <Row> <h1 className={"mt-3 text-center text-white"}> Welcome to the Resale Nation!</h1></Row>
+                 <Row> <h1 className={"mt-3 text-center text-black"}> Welcome to the Resale Nation!</h1></Row>
                 <Row className={"w-100 h-75 mt-4"}>
                 <div className="w-100 h-100 ms-auto me-auto embed-responsive embed-responsive-16by9 youtube-player">
                     <iframe className="w-100 h-100 ms-auto me-auto embed-responsive-item" src="https://www.youtube.com/embed/YLI75W1i9L0"
