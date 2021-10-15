@@ -8,10 +8,8 @@ class ResaleNationContainer extends React.Component {
     render() {
         return (
             <div className="container-fluid" style={{
-                body: '#363537',
                 text: '#FAFAFA',
                 toggleBorder: '#6B8096',
-                background: '#999',
                 height:'100vh'
             }}>
                 <Router>

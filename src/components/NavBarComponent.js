@@ -1,13 +1,14 @@
 import {Nav, Navbar} from "react-bootstrap";
 import * as React from "react";
 import {NavLink} from "react-router-dom";
+import './NavBarComponent.css'
 
 class NavBarComponent extends React.Component {
 
     render() {
         return (
             <Navbar bg="dark" expand="md" variant="dark">
-                <Navbar.Brand href="/home" className="nav-text" style={{marginLeft: '20px'}} >
+                <Navbar.Brand href="/home" className="ms-3 nav-text navbar-logo">
                     Resale Nation
                 </Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
