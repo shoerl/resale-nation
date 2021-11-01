@@ -2,6 +2,7 @@ import * as React from 'react';
 import {BrowserRouter as Router, Redirect, Route} from 'react-router-dom';
 import NavBarComponent from "../components/NavBarComponent";
 import HomePageComponent from "../components/home/HomePageComponent";
+import {Col} from "react-bootstrap";
 
 class ResaleNationContainer extends React.Component {
 
@@ -13,7 +14,9 @@ class ResaleNationContainer extends React.Component {
                 height:'100vh'
             }}>
                 <Router>
-                    <NavBarComponent></NavBarComponent>
+
+                        <NavBarComponent></NavBarComponent>
+
                     <Route path="/home" exact={true}
                            render={(props) =>
                                <HomePageComponent
