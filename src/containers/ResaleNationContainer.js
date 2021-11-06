@@ -8,26 +8,24 @@ class ResaleNationContainer extends React.Component {
 
     render() {
         return (
-            <div className="container-fluid" style={{
-                text: '#FAFAFA',
-                toggleBorder: '#6B8096',
-                height:'100vh'
-            }}>
-                <Router>
+            <div>
+                <NavBarComponent/>
+                    <div className="masthead text-black text-center container d-flex align-items-center flex-column">
+                        <img className="masthead-avatar mb-5" src={"avatar.svg"} alt="..."/>
+                        <h1 className="masthead-heading text-uppercase mb-0">Welcome to the Resale Nation!</h1>
+                        <div className="divider-custom divider-light">
+                            <div className="divider-custom-line"></div>
+                            <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
+                            <div className="divider-custom-line"></div>
+                        </div>
+                        <p className="masthead-subheading font-weight-light mb-0">Youtube - Instagram - Ebay - Tiktok</p>
+                    </div>
 
-                        <NavBarComponent></NavBarComponent>
+            </div>)
 
-                    <Route path="/home" exact={true}
-                           render={(props) =>
-                               <HomePageComponent
-                                   {...props}
-                               />}/>
-                    <Route path="/" exact={true}>
-                        <Redirect to="/home"/>
-                    </Route>
-                </Router>
-            </div>
-        )
+
+
+
     }
 }
 
