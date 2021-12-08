@@ -36,10 +36,6 @@ class NavBarComponent extends React.Component {
         )
     }
 
-    /**
-     * <Navbar.Brand href="/home" className="ms-3 nav-text navbar-logo">
-     *       </Navbar.Brand>
-     */
 }
 
 export default NavBarComponent

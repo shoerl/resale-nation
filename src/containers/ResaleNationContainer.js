@@ -1,8 +1,5 @@
 import * as React from 'react';
 import NavBarComponent from "../components/NavBarComponent";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEbay, faInstagram, faInstagramSquare, faYoutube} from "@fortawesome/free-brands-svg-icons";
-
 
 class ResaleNationContainer extends React.Component {
 
@@ -21,11 +18,12 @@ class ResaleNationContainer extends React.Component {
 
                         <p className="masthead-subheading font-weight-light mb-0">
                             <div className="divider-custom divider-light" style={{gap: "1rem"}}>
-                                <a className={"mr-2"} href={"#"}><FontAwesomeIcon icon={faYoutube} size={"3x"} style={{color: "red"}}/></a>
+                                <a className={"mr-2"} href={"#"}><img src="youtube.svg" class="img-fluid" alt="" height={100} width={100}/></a>
                                 <div style={{width: '2.5rem'}} className="divider-custom-line"></div>
-                                <a className={"ml-2 mr-2"} href={"#"}><FontAwesomeIcon className={"instagramIcon"} icon={faInstagram} size={"3x"}/></a>
+                                <a className={"ml-2 mr-2"} href={"#"}><img src="instagram.svg" class="img-fluid" alt="" height={100} width={100}/></a>
                                 <div style={{width: '2.5rem'}} className="divider-custom-line"></div>
-                                <a className={"ml-2"} href={"#"}><FontAwesomeIcon icon={faEbay} size={"3x"} style={{color: "red"}}/></a>
+                                <a className={"ml-2"} href={"#"}> <img src="ebay.svg" class="img-fluid" alt="" height={100} width={100}/> </a>
+
                             </div>
                         </p>
                     </div>
@@ -36,7 +34,11 @@ class ResaleNationContainer extends React.Component {
 
                         <div class="section-title">
                             <h2>About</h2>
-                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <p>Hi! Welcome to Resale Nation. My name is Zac and for fun and to make money I go to Garage Sales,
+                               Thrift Stores, Estate Sales, and Flea Markets to buy items to flip on places like Ebay and Facebook Market Place.
+                               I like to buy anything that’s cool or can make me a nice profit. I have sold items from Louis Vuitton shoes to vintage
+                               mid century modern chairs. I have been reselling for 10 years, since I was 14.
+                            </p>
                         </div>
 
                         <div class="row">
@@ -44,32 +46,30 @@ class ResaleNationContainer extends React.Component {
                                 <img src={"profile-img.jpg"} class="img-fluid" alt=""/>
                             </div>
                             <div class="col-lg-8 pt-4 pt-lg-0 content">
-                                <h3>UI/UX Designer &amp; Web Developer.</h3>
+                                <h3>Entrepenuer</h3>
                                 <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                    magna aliqua.
+                                    On this site I will be sharing all the cool stuff I find to resell. If you see something that you would like to buy, then please feel free to check out my Ebay Store or Message me as I also accept Venmo and Cash App. The mission of Resale Nation is to provide my customers with a variety of items for a great discounted price.
+
+                                    I also Buy as well if you have old video games, electronics, cameras, vintage ti shirts, vinyls, stereo equipment, gold, and silver then please contact me through either my instagram or cell.
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <ul>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                                            <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1 978 806 5780</span></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-6">
                                         <ul>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>abc@gmail.com</span></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <p>
-                                    Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                                    Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                                    If you live in the Merrimack Valley area or Southern New Hampshire I would love to come by to take a look at stuff you want to get rid
+                                    of when your trying to downsize or move. Please also check out my growing YouTube Channel Resale Nation. I like to also record me finding
+                                    great deals on items to resell. I like to take my audience along with me to watch me source items and negotiate at flea markets and garage sales.
+                                    I also like showing my audience to whole process from buying the item to shipping it.  I also like to educate my viewers on what items to look for at garage
+                                    sales and thrift stores that you can buy for cheap and resell for a nice return!
                                 </p>
                             </div>
                         </div>
