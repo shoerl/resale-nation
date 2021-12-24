@@ -1,40 +1,179 @@
 import * as React from "react";
 import './HomePageComponent.css'
-import {Col, Container, Image, Row} from "react-bootstrap";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import './Blog.css'
 
 class HomePageComponent extends React.Component {
 
     render() {
         return (
-            <Container>
-                 <Row className={"mt-2"}>
-                         <h1 className={"mt-3 text-center text-black"}> Welcome to the Resale Nation!</h1>
-                 </Row>
+            <div>
+            <div className="masthead text-black text-center container d-flex align-items-center flex-column">
+                <img className="masthead-avatar mb-5" src={"avatar.svg"} alt="..."/>
+                <h1 className="masthead-heading text-uppercase mb-0">Welcome to the Resale Nation!</h1>
+                <div className="divider-custom divider-light">
+                    <div className="divider-custom-line"></div>
+                    <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
+                    <div className="divider-custom-line"></div>
+                </div>
 
-                <Row className={"mt-3"} style={{maxWidth: 1000, marginLeft: "auto", marginRight: "auto"}}>
-                    <Row style={{marginLeft: "auto", marginRight: "auto"}}>
-                        <div className="embed-responsive embed-responsive-16by9">
-                            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/YLI75W1i9L0"></iframe>
+                <p className="masthead-subheading font-weight-light mb-0">
+                    <div className="divider-custom divider-light" style={{gap: "1rem"}}>
+                        <a className={"mr-2"} href={"#"}><img src="youtube.svg" className="img-fluid" alt=""
+                                                              height={100} width={100}/></a>
+                        <div style={{width: '2.5rem'}} className="divider-custom-line"></div>
+                        <a className={"ml-2 mr-2"} href={"#"}><img src="instagram.svg" className="img-fluid" alt=""
+                                                                   height={100} width={100}/></a>
+                        <div style={{width: '2.5rem'}} className="divider-custom-line"></div>
+                        <a className={"ml-2"} href={"#"}> <img src="ebay.svg" className="img-fluid" alt="" height={100}
+                                                               width={100}/> </a>
+
+                    </div>
+                </p>
+            </div>
+
+        <section id="about" className="about" style={{paddingTop: "50px", paddingBottom: "500px"}}>
+            <div className="container" data-aos="fade-up">
+
+                <div className="section-title">
+                    <h2>About</h2>
+                    <p>Hi! Welcome to Resale Nation. My name is Zac and for fun and to make money I go to Garage Sales,
+                        Thrift Stores, Estate Sales, and Flea Markets to buy items to flip on places like Ebay and
+                        Facebook Market Place.
+                        I like to buy anything that’s cool or can make me a nice profit. I have sold items from Louis
+                        Vuitton shoes to vintage
+                        mid century modern chairs. I have been reselling for 10 years, since I was 14.
+                    </p>
+                </div>
+
+                <div className="row">
+                    <div className="col-lg-4">
+                        <img src={"profile-img.jpg"} className="img-fluid" alt=""/>
+                    </div>
+                    <div className="col-lg-8 pt-4 pt-lg-0 content">
+                        <h3>Entrepenuer</h3>
+                        <p>
+                            On this site I will be sharing all the cool stuff I find to resell. If you see something
+                            that you would like to buy, then please feel free to check out my Ebay Store or Message me
+                            as I also accept Venmo and Cash App. The mission of Resale Nation is to provide my customers
+                            with a variety of items for a great discounted price.
+
+                            I also Buy as well if you have old video games, electronics, cameras, vintage ti shirts,
+                            vinyls, stereo equipment, gold, and silver then please contact me through either my
+                            instagram or cell.
+                        </p>
+                        <div className="row">
+                            <div className="col-lg-6">
+                                <ul>
+                                    <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1 978 806 5780</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="col-lg-6">
+                                <ul>
+                                    <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong>
+                                        <span>abc@gmail.com</span></li>
+                                </ul>
+                            </div>
                         </div>
-                    </Row>
-                    <Row className={"mt-2"} style={{display: "inline"}}>
+                        <p>
+                            If you live in the Merrimack Valley area or Southern New Hampshire I would love to come by
+                            to take a look at stuff you want to get rid
+                            of when your trying to downsize or move. Please also check out my growing YouTube Channel
+                            Resale Nation. I like to also record me finding
+                            great deals on items to resell. I like to take my audience along with me to watch me source
+                            items and negotiate at flea markets and garage sales.
+                            I also like showing my audience to whole process from buying the item to shipping it. I also
+                            like to educate my viewers on what items to look for at garage
+                            sales and thrift stores that you can buy for cheap and resell for a nice return!
+                        </p>
+                    </div>
+                </div>
 
-                            <a href={"https://www.youtube.com/channel/UCu4TGx_HAkA9b0jWH7NFQuA"}>
-                                <FontAwesomeIcon style={{color: "#c4302b"}} className={"ml-2 mr-2"} icon={faYoutube} size={"3x"}/>
-                            </a>
-                            <a href={"https://www.instagram.com/resalenation1997/"}>
-                                <FontAwesomeIcon style={{color: "#3f729b"}} className={"ml-2 mr-2"} icon={faInstagram} size={"3x"}/>
-                            </a>
-                    </Row>
-                </Row>
+            </div>
+        </section>
 
+        <section id="blog" className="blog" style={{paddingTop: "50px", paddingBottom: "500px"}}>
+            <div className="container" data-aos="fade-up">
+                <div className="section-title">
+                    <h2>Blog</h2>
+                    <section className="section" id="blog">
+                        <div className="row">
+                            <div className="col-lg-4">
+                                <div className="blog-grid">
+                                    <div className="blog-img">
+                                        <div className="date">04 FEB</div>
+                                        <a href="#">
+                                            <img src="https://via.placeholder.com/350x280/FFB6C1/000000"
+                                                 title="" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div className="blog-info">
+                                        <h5><a href="#">Prevent 75% of visitors from google analytics</a>
+                                        </h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                            eiusmod.</p>
+                                        <div className="btn-bar">
+                                            <a href="#" className="px-btn-arrow">
+                                                <span>Read More</span>
+                                                <i className="arrow"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4">
+                                <div className="blog-grid">
+                                    <div className="blog-img">
+                                        <div className="date">04 FEB</div>
+                                        <a href="#">
+                                            <img src="https://via.placeholder.com/350x280/87CEFA/000000"
+                                                 title="" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div className="blog-info">
+                                        <h5><a href="#">Prevent 75% of visitors from google analytics</a>
+                                        </h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                            eiusmod.</p>
+                                        <div className="btn-bar">
+                                            <a href="#" className="px-btn-arrow">
+                                                <span>Read More</span>
+                                                <i className="arrow"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4">
+                                <div className="blog-grid">
+                                    <div className="blog-img">
+                                        <div className="date">04 FEB</div>
+                                        <a href="#">
+                                            <img src="https://via.placeholder.com/350x280/FF7F50/000000"
+                                                 title="" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div className="blog-info">
+                                        <h5><a href="#">Prevent 75% of visitors from google analytics</a>
+                                        </h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                            eiusmod.</p>
+                                        <div className="btn-bar">
+                                            <a href="#" className="px-btn-arrow">
+                                                <span>Read More</span>
+                                                <i className="arrow"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-
-
-
-            </Container>
+                    </section>
+                </div>
+            </div>
+        </section>
+            </div>
         )
     }
 }
