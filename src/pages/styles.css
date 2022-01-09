@@ -10,6 +10,13 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+html, body {
+    background: beige !important;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -11332,10 +11339,10 @@ html {
     font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-   /** background-color: #fff; **/
+    /** background-color: #fff; **/
 }
 .divider-custom.divider-light .divider-custom-icon {
-  /**  color: #fff; **/
+    /**  color: #fff; **/
 }
 
 .btn-xl {
