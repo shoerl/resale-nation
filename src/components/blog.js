@@ -17,10 +17,8 @@ const BlogPreview = (post) => {
                     </a>
                 </div>
                 <div className="blog-info">
-                    <p style={{maxHeight: "100px", overflow: "hidden"}}>
-                        {text}
-
-                    </p>
+                    <h2>{post.title}</h2>
+                    <p style={{maxHeight: "100px", overflow: "hidden"}}>{text}</p>
 
                     <div className="btn-bar">
                         <a href="#" className="px-btn-arrow">

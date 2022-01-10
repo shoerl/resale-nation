@@ -3,7 +3,7 @@ import LogoSrc from "../images/Logo2.png"
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg text-uppercase fixed-top pt-1 pb-1" id="mainNav" style={{backgroundColor: "#2c3e50"}}>
+        <nav className="navbar navbar-expand-lg text-uppercase pt-1 pb-1" id="mainNav" style={{backgroundColor: "#2c3e50"}}>
             <div className="container">
                 <a className="navbar-brand text-white rounded" href="#"><img style={{maxWidth: 800, maxHeight: 75}} src={LogoSrc}/></a>
                 <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
