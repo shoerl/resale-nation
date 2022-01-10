@@ -2,6 +2,9 @@ const path = require('path')
 
 exports.createPages = async gatsbyUtilities => {
     const posts = await getPosts(gatsbyUtilities)
+    posts.forEach((post, index) => { post['id'] = index + 1 })
+    console.log(posts)
+
     await createHomePage({ posts, gatsbyUtilities })
     await createIndividualPostPages({ posts, gatsbyUtilities })
 }
@@ -18,9 +21,9 @@ async function createHomePage({ posts, gatsbyUtilities }) {
 }
 
 async function createIndividualPostPages({ posts, gatsbyUtilities }) {
-     await Promise.all(posts.map( (post, postIdx)  => {
+     await Promise.all(posts.map( (post)  => {
         gatsbyUtilities.actions.createPage({
-            path: '/posts/' + (postIdx + 1),
+            path: '/posts/' + post['id'],
             component: path.resolve('./src/templates/blog-post-template.js'),
             context : {
                 post: post
@@ -39,6 +42,7 @@ async function getPosts({ graphql, reporter }) {
       content {
         childMarkdownRemark {
           html
+          rawMarkdownBody
         }
       }
       image {

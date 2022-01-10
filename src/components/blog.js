@@ -21,7 +21,7 @@ const BlogPreview = (post) => {
                     <p style={{maxHeight: "100px", overflow: "hidden"}}>{text}</p>
 
                     <div className="btn-bar">
-                        <a href="#" className="px-btn-arrow">
+                        <a href={'/posts/' + post.id} className="px-btn-arrow">
                             <span>Read More</span>
                             <i className="arrow"></i>
                         </a>

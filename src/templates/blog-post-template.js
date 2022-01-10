@@ -2,13 +2,13 @@ import * as React from "react";
 import NavBar from "../components/navbar";
 import "../styles/blog-styles.css"
 import moment from "moment";
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const BlogPostTemplate = (context) => {
     let post = context.pageContext.post
     let date = moment(post.createdAt).format("MMMM DD, YYYY");
-    console.log(date);
-    console.log(post);
+    console.log(post.content.childMarkdownRemark.rawMarkdownBody);
 
     return (
         <div>
@@ -17,7 +17,7 @@ const BlogPostTemplate = (context) => {
                 <h1>{post.title}</h1>
                 <p> Written on {date}</p>
                 <hr className={"mb-3"}/>
-                <div>{ ReactHtmlParser(post.content.childMarkdownRemark.html) }</div>
+                <div className={"blog-body"}> <ReactMarkdown children={post.content.childMarkdownRemark.rawMarkdownBody} remarkPlugins={[remarkGfm]} /> </div>
 
             </div>
 
