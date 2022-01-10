@@ -6,14 +6,16 @@ import BlogSection from "../components/blog";
 import "../styles/styles.css"
 
 const HomeTemplate = (data) => {
-    console.log(data)
+    const blog_posts = data.pageContext.posts;
     return (
         <main>
             <NavBar/>
             <div>
                 <WelcomeSection/>
                 <AboutSection/>
-                <BlogSection/>
+                <BlogSection
+                    posts={blog_posts}
+                />
             </div>
 
         </main>

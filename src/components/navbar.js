@@ -17,15 +17,9 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded text-white"
-                                                                 href="#about">About</a></li>
-                        <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded text-white"
-                                                                 href="#about">My Finds</a></li>
+                                                                 href="#about">About & Contact</a></li>
                         <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded text-white"
                                                                  href="#portfolio">Blog</a></li>
-                        <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded text-white"
-                                                                 href="#portfolio">Ebay Shop</a></li>
-                        <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded text-white"
-                                                                 href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
