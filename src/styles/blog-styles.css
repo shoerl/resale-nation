@@ -1,6 +1,15 @@
-.blog-body > p > img {
+.blog-body img {
     display: block;
     margin: 1rem auto;
+}
+
+.blog-body ol {
+    margin-bottom: .5em;
+
+}
+
+.blog-body ul {
+    margin-bottom: .5em;
 }
 
 .global-wrapper {

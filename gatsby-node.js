@@ -42,7 +42,6 @@ async function getPosts({ graphql, reporter }) {
       content {
         childMarkdownRemark {
           html
-          rawMarkdownBody
         }
       }
       image {
