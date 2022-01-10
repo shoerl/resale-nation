@@ -8,8 +8,8 @@ const BlogPostTemplate = (context) => {
     let post = context.pageContext.post
     let date = moment(post.createdAt).format("MMMM DD, YYYY");
     console.log(date);
+    console.log(post);
 
-    console.log(post)
     return (
         <div>
             <NavBar/>

@@ -36,7 +36,6 @@ const BlogPreview = (post) => {
 const BlogSection = (data) => {
     let posts = data.posts;
     let date = Date.parse(posts[0].createdAt)
-    console.log(date.toLocaleString('en-US'));
     return (
         <section id="blog" className="blog" style={{paddingTop: "50px", paddingBottom: "500px"}}>
             <div className="container" data-aos="fade-up">
