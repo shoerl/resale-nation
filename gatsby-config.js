@@ -1,10 +1,6 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.theresalenation.com",
     title: "Resale Nation",
   },
   plugins: [
@@ -18,7 +14,7 @@ module.exports = {
       options: {
         spaceId: `crc159zzt4oh`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+        accessToken: "16x11v37XHyuiwYHbgqIyXb9w80-BgJGqPlTQnrLODU",
       },
     },
     {
