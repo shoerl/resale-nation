@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.theresalenation.com",
-    title: "Resale Nation",
+    title: "The Resale Nation",
+    author: "Zac Pennace",
+    description: "The Resale Nation Website"
   },
   plugins: [
     "gatsby-plugin-react-helmet",

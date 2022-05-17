@@ -4,11 +4,13 @@ import WelcomeSection from "../components/welcome";
 import AboutSection from "../components/about";
 import BlogSection from "../components/blog";
 import "../styles/styles.css"
+import Seo from "../components/seo";
 
 const HomeTemplate = (data) => {
     const blog_posts = data.pageContext.posts;
     return (
         <main>
+            <Seo/>
             <NavBar/>
             <div>
                 <WelcomeSection/>

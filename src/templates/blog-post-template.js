@@ -4,6 +4,7 @@ import "../styles/github-markdown-light.css"
 import moment from "moment";
 import { navigate } from "gatsby"
 import ReactHtmlParser from 'react-html-parser';
+import Seo from "../components/seo";
 
 const markdownStyle = {
     boxSizing: 'border-box',
@@ -18,7 +19,8 @@ const BlogPostTemplate = (context) => {
     let date = moment(post.createdAt).format("MMMM DD, YYYY");
 
     return (
-        <div>
+        <main>
+            <Seo title={"Blog Post " + post.id}/>
             <NavBar/>
             <div className={"global-wrapper markdown-body"} style={markdownStyle}>
                 <h1>{post.title}</h1>
@@ -28,10 +30,8 @@ const BlogPostTemplate = (context) => {
                 <footer style={{ position: "fixed", bottom: "5px"}}>
                     <button type="button" className="btn btn-danger mt-3" onClick={() => navigate(-1)}>{"Go Back"}</button>
                 </footer>
-
             </div>
-
-        </div>
+        </main>
     )
 
 }
