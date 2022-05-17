@@ -1,10 +1,9 @@
 import * as React from "react";
 import NavBar from "../components/navbar";
-//import "../styles/blog-styles.css"
 import "../styles/github-markdown-light.css"
 import moment from "moment";
 import { navigate } from "gatsby"
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 
 const markdownStyle = {
     boxSizing: 'border-box',

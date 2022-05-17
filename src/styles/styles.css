@@ -11438,7 +11438,7 @@ html {
 }
 
 .masthead {
-    padding-top: calc(6rem + 60px);
+    padding-top: calc(2rem + 60px);
     padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
@@ -11449,7 +11449,8 @@ html {
     font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-    width: 15rem;
+    border-radius: 50%;
+    width: 17rem;
 }
 
 @media (min-width: 992px) {

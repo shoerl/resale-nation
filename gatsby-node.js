@@ -3,7 +3,6 @@ const path = require('path')
 exports.createPages = async gatsbyUtilities => {
     const posts = await getPosts(gatsbyUtilities)
     posts.forEach((post, index) => { post['id'] = index + 1 })
-    console.log(posts)
 
     await createHomePage({ posts, gatsbyUtilities })
     await createIndividualPostPages({ posts, gatsbyUtilities })
